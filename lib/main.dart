@@ -12,11 +12,20 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Reorderable List View widget',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'Reorderable List View',
+            style: TextStyle(
+              color: Color.fromARGB(255, 156, 122, 73),
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          centerTitle: true,
+        ),
+        body: const ReorderableListViewScreen(),
       ),
-      home: const ReorderableListViewScreen(),
     );
   }
 }
