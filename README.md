@@ -1,6 +1,6 @@
 # reorderable_list_view
 
-A new Flutter project.
+Flutter Reorderable List View widget. A list whose items the user can interactively reorder by dragging.
 
 ## Getting Started
 
