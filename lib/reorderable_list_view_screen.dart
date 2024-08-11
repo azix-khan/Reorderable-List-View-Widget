@@ -11,8 +11,8 @@ class ReorderableListViewScreen extends StatefulWidget {
 }
 
 class _ReorderableListViewScreenState extends State<ReorderableListViewScreen> {
-  List<String> items = List.generate(50, (index) => 'item ${index + 1}');
-  final List<int> _items = List<int>.generate(50, (int index) => index);
+  List<String> items = List.generate(7, (index) => 'item ${index + 1}');
+  final List<int> _items = List<int>.generate(7, (int index) => index);
 
   @override
   Widget build(BuildContext context) {
@@ -63,6 +63,7 @@ class _ReorderableListViewScreenState extends State<ReorderableListViewScreen> {
                   child: Text(
                     items[index],
                     style: const TextStyle(
+                      color: Color.fromARGB(255, 80, 112, 128),
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
